@@ -2,14 +2,15 @@
   "collectionName": "components_companies_companies",
   "info": {
     "displayName": "companies",
-    "icon": "archive"
+    "icon": "archive",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "contact": {
       "displayName": "contact",

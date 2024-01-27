@@ -5,9 +5,10 @@ export interface CompaniesCompanies extends Schema.Component {
   info: {
     displayName: 'companies';
     icon: 'archive';
+    description: '';
   };
   attributes: {
-    name: Attribute.String & Attribute.Required & Attribute.Unique;
+    name: Attribute.String & Attribute.Required;
     contact: Attribute.Component<'contact.contact'>;
     products: Attribute.Component<'products.products', true>;
   };
