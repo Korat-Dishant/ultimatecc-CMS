@@ -37,8 +37,8 @@ export interface ProductsProducts extends Schema.Component {
     url: Attribute.String & Attribute.Required;
     images: Attribute.Media;
     discount: Attribute.Integer;
-    description: Attribute.Blocks;
     price: Attribute.Float & Attribute.Required;
+    description: Attribute.Text;
   };
 }
 

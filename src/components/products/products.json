@@ -26,12 +26,12 @@
     "discount": {
       "type": "integer"
     },
-    "description": {
-      "type": "blocks"
-    },
     "price": {
       "type": "float",
       "required": true
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
