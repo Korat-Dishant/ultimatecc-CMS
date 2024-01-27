@@ -4,17 +4,27 @@
   "info": {
     "singularName": "company",
     "pluralName": "companies",
-    "displayName": "company"
+    "displayName": "company",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "company": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact"
+    },
+    "products": {
       "type": "component",
       "repeatable": true,
-      "component": "companies.companies"
+      "component": "products.products"
     }
   }
 }
