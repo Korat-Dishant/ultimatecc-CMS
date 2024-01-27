@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_companies_companies",
+  "info": {
+    "displayName": "companies",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "contact": {
+      "displayName": "contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact"
+    },
+    "products": {
+      "displayName": "products",
+      "type": "component",
+      "repeatable": true,
+      "component": "products.products",
+      "required": false
+    }
+  }
+}

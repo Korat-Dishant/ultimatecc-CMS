@@ -362,33 +362,25 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiCompanyCompany extends Schema.CollectionType {
-  collectionName: 'companies';
+export interface ApiDataData extends Schema.CollectionType {
+  collectionName: 'datacollection';
   info: {
-    singularName: 'company';
-    pluralName: 'companies';
-    displayName: 'company';
+    singularName: 'data';
+    pluralName: 'datacollection';
+    displayName: 'data';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String & Attribute.Required & Attribute.Unique;
-    image: Attribute.Media;
+    companies: Attribute.Component<'companies.companies', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::company.company',
-      'oneToOne',
-      'admin::user'
-    > &
+    createdBy: Attribute.Relation<'api::data.data', 'oneToOne', 'admin::user'> &
       Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::company.company',
-      'oneToOne',
-      'admin::user'
-    > &
+    updatedBy: Attribute.Relation<'api::data.data', 'oneToOne', 'admin::user'> &
       Attribute.Private;
   };
 }
@@ -822,7 +814,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::company.company': ApiCompanyCompany;
+      'api::data.data': ApiDataData;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

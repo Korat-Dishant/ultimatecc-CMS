@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_products_products",
+  "info": {
+    "displayName": "products",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

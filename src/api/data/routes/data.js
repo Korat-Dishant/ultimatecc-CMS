@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * company router
+ * data router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::company.company');
+module.exports = createCoreRouter('api::data.data');
