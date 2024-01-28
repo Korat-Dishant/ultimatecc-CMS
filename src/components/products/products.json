@@ -34,7 +34,7 @@
       "type": "text"
     },
     "imageUrl": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

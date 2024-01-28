@@ -39,7 +39,7 @@ export interface ProductsProducts extends Schema.Component {
     discount: Attribute.Integer;
     price: Attribute.Float & Attribute.Required;
     description: Attribute.Text;
-    imageUrl: Attribute.String;
+    imageUrl: Attribute.Text;
   };
 }
 
