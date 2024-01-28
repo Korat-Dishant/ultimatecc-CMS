@@ -32,6 +32,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "imageUrl": {
+      "type": "string"
     }
   }
 }
